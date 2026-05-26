@@ -1,4 +1,7 @@
 ﻿
+using AuctionService.Application.DTOs;
+using UserService.Application.DTOs;
+
 namespace AuctionService.Infrastructure.Clients
 {
     public class UserClient 
@@ -10,10 +13,22 @@ namespace AuctionService.Infrastructure.Clients
             _http = http;
         }
 
-        public async Task<bool> VehicleExists(long vehicleId)
+        public async Task<HttpResponseMessage> GetUser(string email)
         {
-            var response = await _http.GetAsync($"http://localhost:5250/api/items/{vehicleId}");
-            return response.IsSuccessStatusCode;
+            var response = await _http.GetAsync($"http://localhost:5117/api/users/user/{email}");
+            return response;
+        }
+
+        public async Task<HttpResponseMessage> Register(CreateUserDto dto)
+        {
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/users/register", dto);
+            return response;
+        }
+
+        public async Task<HttpResponseMessage> Validate(ValidateCredentialsDto dto)
+        {
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/users/validate", dto);
+            return response;
         }
     }
 }

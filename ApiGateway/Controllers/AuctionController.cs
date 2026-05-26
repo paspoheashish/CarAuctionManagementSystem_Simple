@@ -16,47 +16,41 @@ namespace ApiGateway.Controllers
         [HttpPost("start")]
         public async Task<IActionResult> Start(StartAuctionDto dto)
         {
-            try
-            {
-                return Ok(await _client.Start(dto));
-            }
-            catch (Exception ex)
-            {
-                return Conflict(new { message = ex.Message });
-            }
+            var response = await _client.Start(dto);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
         }
 
         [HttpPost("{id}/close")]
         public async Task<IActionResult> Close(long id)
         {
-            try
-            {
-                return Ok(await _client.Close(id));
-            }
-            catch (Exception ex)
-            {
-                return Conflict(new { message = ex.Message });
-            }
+            var response = await _client.Close(id);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
         }
 
         [HttpPost("{id}/bid")]
         public async Task<IActionResult> Bid(long id, PlaceBidDto dto)
         {
-            try
-            {
-                return Ok(await _client.Bid(id, dto));
-            }
-            catch (Exception ex)
-            {
-                return Conflict(new { message = ex.Message });
-            }
+            var response = await _client.Bid(id, dto);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(long id)
         {
-            var auction = await _client.Get(id);
-            return auction == null ? NotFound() : Ok(auction);
+            var response = await _client.Get(id);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
         }
 
     }

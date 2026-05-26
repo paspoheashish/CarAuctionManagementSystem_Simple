@@ -1,4 +1,7 @@
 ﻿
+using AuctionService.Application.DTOs;
+using ItemService.Application.DTOs;
+
 namespace AuctionService.Infrastructure.Clients
 {
     public class ItemClient 
@@ -10,10 +13,23 @@ namespace AuctionService.Infrastructure.Clients
             _http = http;
         }
 
-        public async Task<bool> VehicleExists(long vehicleId)
+        public async Task<HttpResponseMessage> Search(string? type, string? manufacturer, string? model, int? year)
         {
-            var response = await _http.GetAsync($"http://localhost:5250/api/items/{vehicleId}");
-            return response.IsSuccessStatusCode;
+            var response = await _http.GetAsync($"http://localhost:5117/api/items?type={type}&manufacturer={manufacturer}&model={model}&year={year}");
+            return response;
         }
+
+        public async Task<HttpResponseMessage> Get(long id)
+        {
+            var response = await _http.GetAsync($"http://localhost:5117/api/items/{id}");
+            return response;
+        }
+
+        public async Task<HttpResponseMessage> Add(AddVehicleDto dto)
+        {
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/Add", dto);
+            return response;
+        }
+
     }
 }

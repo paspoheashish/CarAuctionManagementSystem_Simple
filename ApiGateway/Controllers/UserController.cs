@@ -1,12 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AuctionService.Infrastructure.Clients;
+using Microsoft.AspNetCore.Mvc;
+using UserService.Application.DTOs;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ApiGateway.Controllers
 {
     public class UserController : Controller
     {
-        public IActionResult Index()
+        private readonly UserClient _client;
+
+        public UserController(UserClient client)
         {
-            return View();
+            _client = client;
+        }
+
+        [HttpGet("user/{email}")]
+        public async Task<IActionResult> GetUser(string email)
+        {
+            var response = await _client.GetUser(email);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(CreateUserDto dto)
+        {
+            var response = await _client.Register(dto);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
+        }
+
+        [HttpPost("validate")]
+        public async Task<IActionResult> Validate(ValidateCredentialsDto dto)
+        {
+            var response = await _client.Validate(dto);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return StatusCode((int)response.StatusCode, content);
         }
     }
 }
