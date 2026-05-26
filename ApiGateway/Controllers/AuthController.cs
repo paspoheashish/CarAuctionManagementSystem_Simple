@@ -1,5 +1,5 @@
 ﻿using AuctionService.Infrastructure.Clients;
-using Microsoft.AspNetCore.Identity.Data;
+using AuthService.Application.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.Controllers
@@ -8,21 +8,21 @@ namespace ApiGateway.Controllers
     [Route("api/Auth")]
     public class AuthController : Controller
     {
-        //private readonly AuthnClient _client;
+        private readonly AuthClient _client;
 
-        //public AuthController(AuthnClient client)
-        //{
-        //    _client = client;
-        //}
+        public AuthController(AuthClient client)
+        {
+            _client = client;
+        }
 
-        //[HttpPost("login")]
-        //public async Task<IActionResult> Login(LoginRequest request)
-        //{
-        //    var response = await _client.Login(request);
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginRequest request)
+        {
+            var response = await _client.Login(request);
 
-        //    var content = await response.Content.ReadAsStringAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
-        //    return StatusCode((int)response.StatusCode, content);
-        //}
+            return StatusCode((int)response.StatusCode, content);
+        }
     }
 }

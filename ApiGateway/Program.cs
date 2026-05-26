@@ -14,6 +14,7 @@ builder.Services.AddScoped<AuctionClient>();
 builder.Services.AddScoped<NotificationClient>();
 builder.Services.AddScoped<ItemClient>();
 builder.Services.AddScoped<UserClient>();
+builder.Services.AddScoped<AuthClient>();
 
 var app = builder.Build();
 

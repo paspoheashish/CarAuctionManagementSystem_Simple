@@ -38,3 +38,4 @@ C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuthService\obj
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuthService\obj\Debug\net8.0\AuthService.pdb
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuthService\obj\Debug\net8.0\AuthService.genruntimeconfig.cache
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuthService\obj\Debug\net8.0\ref\AuthService.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuthService\obj\Debug\net8.0\AuthService.sourcelink.json
