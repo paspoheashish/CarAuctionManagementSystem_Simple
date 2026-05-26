@@ -1,9 +1,11 @@
 ﻿using AuctionService.Infrastructure.Clients;
 using ItemService.Application.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/items")]
     public class ItemController : ControllerBase

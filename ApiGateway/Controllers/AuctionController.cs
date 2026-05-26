@@ -1,9 +1,11 @@
 ﻿using AuctionService.Application.DTOs;
 using AuctionService.Infrastructure.Clients;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/Auctions")]
     public class AuctionController : Controller

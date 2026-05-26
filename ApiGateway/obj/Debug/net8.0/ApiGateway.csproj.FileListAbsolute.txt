@@ -34,3 +34,11 @@ C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\obj\
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\obj\Debug\net8.0\ApiGateway.genruntimeconfig.cache
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\obj\Debug\net8.0\ref\ApiGateway.dll
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\obj\Debug\net8.0\ApiGateway.sourcelink.json
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\ApiGateway\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

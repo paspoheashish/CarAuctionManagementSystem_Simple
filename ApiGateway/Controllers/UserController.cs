@@ -28,6 +28,7 @@ namespace ApiGateway.Controllers
             return StatusCode((int)response.StatusCode, content);
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register(CreateUserDto dto)
         {
