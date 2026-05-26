@@ -10,6 +10,22 @@ namespace ApiGateway.Controllers
     [ApiVersion("1.0")]
     public class NotificationController : ControllerBase
     {
-        
+        [HttpPost]
+        public async Task<IActionResult> AuctionStarted()
+        {
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> BidPlaced()
+        {
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AuctionClosed()
+        {
+            return Ok();
+        }
     }
 }

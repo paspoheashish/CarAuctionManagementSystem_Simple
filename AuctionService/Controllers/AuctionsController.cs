@@ -1,4 +1,5 @@
 ﻿using AuctionService.Application.DTOs;
+using AuctionService.Application.Interfaces;
 using AuctionService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,9 @@ namespace AuctionService.Controllers
     [Route("api/auctions")]
     public class AuctionsController : Controller
     {
-        private readonly AuctionService.Application.Services.AuctionService _service;
+        private readonly IAuctionService _service;
 
-        public AuctionsController(AuctionService.Application.Services.AuctionService service)
+        public AuctionsController(IAuctionService service)
         {
             _service = service;
         }

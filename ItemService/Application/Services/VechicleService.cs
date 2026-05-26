@@ -7,7 +7,7 @@ using UserService.Application.Interfaces.Repositories;
 
 namespace ItemService.Application.Services
 {
-    public class VechicleService
+    public class VechicleService : IVechicleService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IVehicleRepository _vehicleRepository;

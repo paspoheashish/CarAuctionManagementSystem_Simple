@@ -1,4 +1,5 @@
 ﻿using ItemService.Application.DTOs;
+using ItemService.Application.Interfaces;
 using ItemService.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,9 @@ namespace ItemService.Controllers
     [Route("api/items")]
     public class ItemsController : Controller
     {
-        private readonly VechicleService _service;
+        private readonly IVechicleService _service;
 
-        public ItemsController(VechicleService service)
+        public ItemsController(IVechicleService service)
         {
             _service = service;
         }

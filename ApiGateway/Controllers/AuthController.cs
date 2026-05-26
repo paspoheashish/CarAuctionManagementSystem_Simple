@@ -1,4 +1,5 @@
-﻿using Asp.Versioning;
+﻿using ApiGateway.Application.Interfaces;
+using Asp.Versioning;
 using AuctionService.Infrastructure.Clients;
 using AuthService.Application.DTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -10,9 +11,9 @@ namespace ApiGateway.Controllers
     [ApiVersion("1.0")]
     public class AuthController : Controller
     {
-        private readonly AuthClient _client;
+        private readonly IAuthClient _client;
 
-        public AuthController(AuthClient client)
+        public AuthController(IAuthClient client)
         {
             _client = client;
         }

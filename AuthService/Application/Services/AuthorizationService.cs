@@ -1,9 +1,10 @@
 ﻿using AuthService.Application.DTOs;
+using AuthService.Application.Interfaces;
 using AuthService.Infrastructure.Clients;
 
 namespace AuthService.Application.Services
 {
-    public class AuthorizationService
+    public class AuthorizationService : IAuthorizationService
     {
         private readonly UserServiceClient _userClient;
         public AuthorizationService(UserServiceClient userClient) {

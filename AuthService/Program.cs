@@ -1,3 +1,4 @@
+using AuthService.Application.Interfaces;
 using AuthService.Application.Services;
 using AuthService.Infrastructure.Clients;
 
@@ -8,8 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // JWT config
-builder.Services.AddSingleton<JwtTokenService>();
-builder.Services.AddScoped<AuthorizationService>();
+builder.Services.AddSingleton<IJwtTokenService , JwtTokenService>();
+builder.Services.AddSingleton<IAuthorizationService , AuthorizationService>();
 // UserService HTTP client
 builder.Services.AddHttpClient<UserServiceClient>(c =>
 {

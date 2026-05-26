@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<AppDBContext>();
 builder.Services.AddSingleton<IVehicleRepository, VehicleRepository>();
 builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<ItemService.Application.Services.VechicleService>();
+builder.Services.AddScoped<IVechicleService , ItemService.Application.Services.VechicleService>();
 
 var app = builder.Build();
 

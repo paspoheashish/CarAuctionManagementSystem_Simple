@@ -1,12 +1,13 @@
-﻿namespace AuthService.Application.Services
-{
-    using AuthService.Application.DTOs;
-    using Microsoft.IdentityModel.Tokens;
-    using System.IdentityModel.Tokens.Jwt;
-    using System.Security.Claims;
-    using System.Text;
+﻿using AuthService.Application.DTOs;
+using AuthService.Application.Interfaces;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
-    public class JwtTokenService
+namespace AuthService.Application.Services
+{
+    public class JwtTokenService : IJwtTokenService
     {
         private readonly IConfiguration _config;
 

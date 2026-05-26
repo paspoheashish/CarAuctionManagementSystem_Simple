@@ -27,7 +27,7 @@ internal class Program
         //{
         //    c.BaseAddress = new Uri("http://localhost:5250/");
         //});        
-        builder.Services.AddScoped<AuctionService.Application.Services.AuctionService>();
+        builder.Services.AddScoped<IAuctionService, AuctionService.Application.Services.AuctionService>();
 
         var app = builder.Build();
 

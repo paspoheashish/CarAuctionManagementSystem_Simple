@@ -5,7 +5,7 @@ using UserService.Application.Interfaces.Repositories;
 
 namespace AuctionService.Application.Services
 {
-    public class AuctionService
+    public class AuctionService : IAuctionService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IItemServiceClient _itemClient;

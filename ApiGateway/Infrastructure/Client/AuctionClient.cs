@@ -1,9 +1,10 @@
 ﻿
+using ApiGateway.Application.Interfaces;
 using AuctionService.Application.DTOs;
 
 namespace AuctionService.Infrastructure.Clients
 {
-    public class AuctionClient
+    public class AuctionClient : IAuctionClient
     {
         private readonly HttpClient _http;
 

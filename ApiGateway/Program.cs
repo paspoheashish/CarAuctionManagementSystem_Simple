@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Text;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using ApiGateway.Application.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,11 +47,11 @@ builder.Services.AddSwaggerGen(c =>
 
 
 builder.Services.AddSingleton<HttpClient>();
-builder.Services.AddScoped<AuctionClient>();
-builder.Services.AddScoped<NotificationClient>();
-builder.Services.AddScoped<ItemClient>();
-builder.Services.AddScoped<UserClient>();
-builder.Services.AddScoped<AuthClient>();
+builder.Services.AddScoped<IAuctionClient, AuctionClient>();
+builder.Services.AddScoped<INotificationClient, NotificationClient>();
+builder.Services.AddScoped<IItemClient, ItemClient>();
+builder.Services.AddScoped<IUserClient, UserClient>();
+builder.Services.AddScoped<IAuthClient, AuthClient>();
 
 builder.Services
     .AddAuthentication("Bearer")

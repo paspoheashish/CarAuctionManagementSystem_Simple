@@ -1,4 +1,5 @@
-﻿using Asp.Versioning;
+﻿using ApiGateway.Application.Interfaces;
+using Asp.Versioning;
 using AuctionService.Application.DTOs;
 using AuctionService.Infrastructure.Clients;
 using Microsoft.AspNetCore.Authorization;
@@ -12,9 +13,9 @@ namespace ApiGateway.Controllers
     [ApiVersion("1.0")]
     public class AuctionController : Controller
     {
-        private readonly AuctionClient _client;
+        private readonly IAuctionClient _client;
 
-        public AuctionController(AuctionClient client)
+        public AuctionController(IAuctionClient client)
         {
             _client = client;
         }

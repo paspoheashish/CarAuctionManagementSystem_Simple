@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using UserService.Application.DTOs;
+using UserService.Application.Interfaces;
 using UserService.Application.Interfaces.Repositories;
 using UserService.Domain.Entities;
 
 namespace UserService.Application.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IUserRepository _userRepository;

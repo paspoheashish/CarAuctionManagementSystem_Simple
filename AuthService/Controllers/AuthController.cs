@@ -1,6 +1,6 @@
 ﻿using AuthService.Application.DTOs;
+using AuthService.Application.Interfaces;
 using AuthService.Application.Services;
-using AuthService.Infrastructure.Clients;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthService.Controllers
@@ -10,10 +10,10 @@ namespace AuthService.Controllers
     public class AuthController : ControllerBase
     {
         
-        private readonly JwtTokenService _jwt;
-        private readonly AuthorizationService _authorizationService;
+        private readonly IJwtTokenService _jwt;
+        private readonly IAuthorizationService _authorizationService;
 
-        public AuthController(AuthorizationService authorizationService, JwtTokenService jwt)
+        public AuthController(IAuthorizationService authorizationService, IJwtTokenService jwt)
         {
             _authorizationService = authorizationService;
             _jwt = jwt;

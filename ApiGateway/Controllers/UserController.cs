@@ -1,4 +1,5 @@
-﻿using Asp.Versioning;
+﻿using ApiGateway.Application.Interfaces;
+using Asp.Versioning;
 using AuctionService.Infrastructure.Clients;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,9 +13,9 @@ namespace ApiGateway.Controllers
     [ApiVersion("1.0")]
     public class UserController : Controller
     {
-        private readonly UserClient _client;
+        private readonly IUserClient _client;
 
-        public UserController(UserClient client)
+        public UserController(IUserClient client)
         {
             _client = client;
         }
