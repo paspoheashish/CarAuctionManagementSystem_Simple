@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Application.DTOs;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ApiGateway.Controllers
 {

@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/Tests/">
+    <Project Path="AuctionService.Test/AuctionService.Test.csproj" Id="79331c11-145f-4d7b-b7f1-a9b44ac9ef3d" />
+    <Project Path="AuthService.Test/AuthService.Test.csproj" Id="63cfdc09-928c-4d06-82d3-660b026604ed" />
+    <Project Path="ItemService.Test/ItemService.Test.csproj" Id="75a55cf6-fc42-4924-a178-6283cf084995" />
+    <Project Path="UserService.Test/UserService.Test.csproj" Id="0884f454-8d89-4d6d-986e-1c432b572e08" />
+  </Folder>
   <Project Path="ApiGateway/ApiGateway.csproj" />
   <Project Path="AuctionService/AuctionService.csproj" />
   <Project Path="AuthService/AuthService.csproj" />

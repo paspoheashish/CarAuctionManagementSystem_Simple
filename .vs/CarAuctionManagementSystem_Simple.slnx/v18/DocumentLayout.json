@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0884F454-8D89-4D6D-986E-1C432B572E08}|UserService.Test\\UserService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\userservice.test\\integrationtest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0884F454-8D89-4D6D-986E-1C432B572E08}|UserService.Test\\UserService.Test.csproj|solutionrelative:userservice.test\\integrationtest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice\\infrastructure\\repositories\\auctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|solutionrelative:auctionservice\\infrastructure\\repositories\\auctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\apigateway\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,19 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IntegrationTest1.cs",
+              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\UserService.Test\\IntegrationTest1.cs",
+              "RelativeDocumentMoniker": "UserService.Test\\IntegrationTest1.cs",
+              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\UserService.Test\\IntegrationTest1.cs",
+              "RelativeToolTip": "UserService.Test\\IntegrationTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T13:15:50.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuctionRepository.cs",
+              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Infrastructure\\Repositories\\AuctionRepository.cs",
+              "RelativeDocumentMoniker": "AuctionService\\Infrastructure\\Repositories\\AuctionRepository.cs",
+              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Infrastructure\\Repositories\\AuctionRepository.cs",
+              "RelativeToolTip": "AuctionService\\Infrastructure\\Repositories\\AuctionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T13:13:47.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ApiGateway\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\UserController.cs",
               "RelativeToolTip": "ApiGateway\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T13:10:24.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "NotificationController.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\NotificationController.cs",
               "RelativeDocumentMoniker": "ApiGateway\\Controllers\\NotificationController.cs",
@@ -59,12 +93,11 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\NotificationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:10:18.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:10:18.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "ApiGateway\\Controllers\\ItemController.cs",
@@ -72,12 +105,11 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\ItemController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:10:13.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:10:13.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ApiGateway\\Controllers\\AuthController.cs",
@@ -85,12 +117,11 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:10:10.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:10:10.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AuctionController.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\AuctionController.cs",
               "RelativeDocumentMoniker": "ApiGateway\\Controllers\\AuctionController.cs",
@@ -98,12 +129,11 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\AuctionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:09:51.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:09:51.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AuthService\\Controllers\\AuthController.cs",
@@ -111,8 +141,7 @@
               "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:48:48.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:48:48.872Z"
             }
           ]
         }

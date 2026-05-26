@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "ApiGateway\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ApiGateway\\Controllers\\UserController.cs",
               "RelativeToolTip": "ApiGateway\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T13:10:24.995Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\NotificationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:10:18.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:10:18.408Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\ItemController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:10:13.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:10:13.197Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:10:10.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:10:10.078Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "ApiGateway\\Controllers\\AuctionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T13:09:51.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T13:09:51.767Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:48:48.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:48:48.872Z"
             }
           ]
         }
