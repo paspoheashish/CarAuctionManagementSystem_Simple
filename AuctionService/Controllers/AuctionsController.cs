@@ -1,0 +1,64 @@
+﻿using AuctionService.Application.DTOs;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AuctionService.Controllers
+{
+    [ApiController]
+    [Route("api/auctions")]
+    public class AuctionsController : Controller
+    {
+        private readonly AuctionService.Application.Services.AuctionService _service;
+
+        public AuctionsController(AuctionService.Application.Services.AuctionService service)
+        {
+            _service = service;
+        }
+
+        [HttpPost("start")]
+        public async Task<IActionResult> Start(StartAuctionDto dto)
+        {
+            try
+            {
+                return Ok(await _service.StartAuctionAsync(dto.VehicleId));
+            }
+            catch (Exception ex)
+            {
+                return Conflict(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost("{id}/close")]
+        public async Task<IActionResult> Close(long id)
+        {
+            try
+            {
+                return Ok(await _service.CloseAuctionAsync(id));
+            }
+            catch (Exception ex)
+            {
+                return Conflict(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost("{id}/bid")]
+        public async Task<IActionResult> Bid(long id, PlaceBidDto dto)
+        {
+            try
+            {
+                return Ok(await _service.PlaceBidAsync(id, dto.Amount, dto.Bidder));
+            }
+            catch (Exception ex)
+            {
+                return Conflict(new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(long id)
+        {
+            var auction = await _service.GetAuctionAsync(id);
+            return auction == null ? NotFound() : Ok(auction);
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+﻿
+using AuctionService.Application.DTOs;
+
+namespace AuctionService.Infrastructure.Clients
+{
+    public class AuctionClient
+    {
+        private readonly HttpClient _http;
+
+        public AuctionClient(HttpClient http)
+        {
+            _http = http;
+        }
+
+        public async Task<HttpResponseMessage> Get(long vehicleId)
+        {
+            var response = await _http.GetAsync($"http://localhost:5117/api/auctions/{vehicleId}");
+            return response;
+        }
+
+        public async Task<HttpResponseMessage> Bid(long id, PlaceBidDto dto)
+        {
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/{id}/bid", dto);
+            return response;
+        }
+
+        public async Task<HttpResponseMessage> Close(long id)
+        {
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/{id}/close", new { });
+            return response;
+        }
+
+        public async Task<HttpResponseMessage> Start(StartAuctionDto dto)
+        {
+            var response = await _http.GetAsync($"http://localhost:5117/api/auctions/start");
+            return response;
+        }
+    }
+}
