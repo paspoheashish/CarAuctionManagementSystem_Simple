@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.Controllers
 {
-    public class ItemController : Controller
+    [ApiController]
+    [Route("api/items")]
+    public class ItemController : ControllerBase
     {
         private readonly ItemClient _client;
 

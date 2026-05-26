@@ -14,7 +14,7 @@ namespace UserService.Controllers
             _service = service;
         }
 
-        [HttpGet("user/{email}")]
+        [HttpGet("{email}")]
         public async Task<IActionResult> GetUser(string email)
         {
             var user = await _service.GetByEmailAsync(email);

@@ -5,6 +5,8 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace ApiGateway.Controllers
 {
+    [ApiController]
+    [Route("api/Users")]
     public class UserController : Controller
     {
         private readonly UserClient _client;
@@ -14,7 +16,7 @@ namespace ApiGateway.Controllers
             _client = client;
         }
 
-        [HttpGet("user/{email}")]
+        [HttpGet("{email}")]
         public async Task<IActionResult> GetUser(string email)
         {
             var response = await _client.GetUser(email);

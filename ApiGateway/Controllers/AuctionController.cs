@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.Controllers
 {
+    [ApiController]
+    [Route("api/Auctions")]
     public class AuctionController : Controller
     {
         private readonly AuctionClient _client;

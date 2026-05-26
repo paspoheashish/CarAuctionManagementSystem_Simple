@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "UserService.Controllers.UsersController",
+    "Method": "GetUser",
+    "RelativePath": "api/users/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserService.Controllers.UsersController",
     "Method": "Register",
     "RelativePath": "api/users/register",
     "HttpMethod": "POST",
@@ -11,22 +27,6 @@
         "Name": "dto",
         "Type": "UserService.Application.DTOs.CreateUserDto",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "UserService.Controllers.UsersController",
-    "Method": "GetUser",
-    "RelativePath": "api/users/user",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

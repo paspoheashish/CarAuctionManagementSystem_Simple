@@ -15,19 +15,19 @@ namespace AuctionService.Infrastructure.Clients
 
         public async Task<HttpResponseMessage> GetUser(string email)
         {
-            var response = await _http.GetAsync($"http://localhost:5117/api/users/user/{email}");
+            var response = await _http.GetAsync($"http://localhost:5253/api/users/{email}");
             return response;
         }
 
         public async Task<HttpResponseMessage> Register(CreateUserDto dto)
         {
-            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/users/register", dto);
+            var response = await _http.PostAsJsonAsync($"http://localhost:5253/api/users/register", dto);
             return response;
         }
 
         public async Task<HttpResponseMessage> Validate(ValidateCredentialsDto dto)
         {
-            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/users/validate", dto);
+            var response = await _http.PostAsJsonAsync($"http://localhost:5253/api/users/validate", dto);
             return response;
         }
     }

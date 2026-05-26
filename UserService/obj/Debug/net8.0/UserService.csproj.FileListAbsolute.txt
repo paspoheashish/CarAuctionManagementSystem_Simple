@@ -87,3 +87,4 @@ C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\UserService\bin
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\UserService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\UserService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\UserService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\UserService\obj\Debug\net8.0\UserService.sourcelink.json

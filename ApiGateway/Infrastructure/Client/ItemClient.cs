@@ -15,19 +15,19 @@ namespace AuctionService.Infrastructure.Clients
 
         public async Task<HttpResponseMessage> Search(string? type, string? manufacturer, string? model, int? year)
         {
-            var response = await _http.GetAsync($"http://localhost:5117/api/items?type={type}&manufacturer={manufacturer}&model={model}&year={year}");
+            var response = await _http.GetAsync($"http://localhost:5250/api/items?type={type}&manufacturer={manufacturer}&model={model}&year={year}");
             return response;
         }
 
         public async Task<HttpResponseMessage> Get(long id)
         {
-            var response = await _http.GetAsync($"http://localhost:5117/api/items/{id}");
+            var response = await _http.GetAsync($"http://localhost:5250/api/items/{id}");
             return response;
         }
 
         public async Task<HttpResponseMessage> Add(AddVehicleDto dto)
         {
-            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/Add", dto);
+            var response = await _http.PostAsJsonAsync($"http://localhost:5250/api/auctions/Add", dto);
             return response;
         }
 

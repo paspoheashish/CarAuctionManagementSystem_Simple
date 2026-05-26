@@ -2,11 +2,10 @@
 
 namespace ApiGateway.Controllers
 {
-    public class NotificationController : Controller
+    [ApiController]
+    [Route("api/notifications")]
+    public class NotificationController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
     }
 }
