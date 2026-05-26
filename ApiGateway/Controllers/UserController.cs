@@ -1,4 +1,5 @@
-﻿using AuctionService.Infrastructure.Clients;
+﻿using Asp.Versioning;
+using AuctionService.Infrastructure.Clients;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Application.DTOs;
@@ -7,7 +8,8 @@ namespace ApiGateway.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/Users")]
+    [Route("api/v{version:apiVersion}/Users")]
+    [ApiVersion("1.0")]
     public class UserController : Controller
     {
         private readonly UserClient _client;

@@ -1,11 +1,13 @@
-﻿using AuctionService.Infrastructure.Clients;
+﻿using Asp.Versioning;
+using AuctionService.Infrastructure.Clients;
 using AuthService.Application.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.Controllers
 {
     [ApiController]
-    [Route("api/Auth")]
+    [Route("api/v{version:apiVersion}/Auth")]
+    [ApiVersion("1.0")]
     public class AuthController : Controller
     {
         private readonly AuthClient _client;

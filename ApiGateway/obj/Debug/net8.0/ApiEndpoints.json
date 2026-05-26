@@ -2,7 +2,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.AuctionController",
     "Method": "Get",
-    "RelativePath": "api/Auctions/{id}",
+    "RelativePath": "api/v1/Auctions/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.AuctionController",
     "Method": "Bid",
-    "RelativePath": "api/Auctions/bid/{auctionId}",
+    "RelativePath": "api/v1/Auctions/bid/{auctionId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -39,7 +39,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.AuctionController",
     "Method": "Close",
-    "RelativePath": "api/Auctions/close/{id}",
+    "RelativePath": "api/v1/Auctions/close/{id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -55,7 +55,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.AuctionController",
     "Method": "Start",
-    "RelativePath": "api/Auctions/start",
+    "RelativePath": "api/v1/Auctions/start",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -71,7 +71,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "api/Auth/login",
+    "RelativePath": "api/v1/Auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -87,7 +87,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.ItemController",
     "Method": "Get",
-    "RelativePath": "api/items/{id}",
+    "RelativePath": "api/v1/items/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -103,7 +103,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.ItemController",
     "Method": "Add",
-    "RelativePath": "api/items/Save",
+    "RelativePath": "api/v1/items/Save",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -119,7 +119,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.ItemController",
     "Method": "Search",
-    "RelativePath": "api/items/search",
+    "RelativePath": "api/v1/items/search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -150,7 +150,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.UserController",
     "Method": "GetUser",
-    "RelativePath": "api/Users/{email}",
+    "RelativePath": "api/v1/Users/{email}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -166,7 +166,7 @@
   {
     "ContainingType": "ApiGateway.Controllers.UserController",
     "Method": "Register",
-    "RelativePath": "api/Users/register",
+    "RelativePath": "api/v1/Users/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -182,7 +182,55 @@
   {
     "ContainingType": "ApiGateway.Controllers.UserController",
     "Method": "Validate",
-    "RelativePath": "api/Users/validate",
+    "RelativePath": "api/v1/Users/validate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UserService.Application.DTOs.ValidateCredentialsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiGateway.Controllers.UserTwoController",
+    "Method": "GetUser",
+    "RelativePath": "api/v2/Users/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiGateway.Controllers.UserTwoController",
+    "Method": "Register",
+    "RelativePath": "api/v2/Users/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UserService.Application.DTOs.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiGateway.Controllers.UserTwoController",
+    "Method": "Validate",
+    "RelativePath": "api/v2/Users/validate",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

@@ -17,6 +17,7 @@ C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationSer
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\NotificationService.csproj.CoreCompileInputs.cache
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\NotificationService.MvcApplicationPartsAssemblyInfo.cs
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\NotificationService.MvcApplicationPartsAssemblyInfo.cache
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\NotificationService.sourcelink.json
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\NotificationService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

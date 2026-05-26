@@ -1,7 +1,12 @@
+using Asp.Versioning;
+using Asp.Versioning.ApiExplorer;
 using AuctionService.Infrastructure.Clients;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Text;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +17,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Gateway", Version = "v1" });
-
     // Add JWT Auth to Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -70,18 +73,74 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
+var apiVersioningBuilder = builder.Services.AddApiVersioning(options =>
+{
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.ReportApiVersions = true;
+});
+
+apiVersioningBuilder.AddApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV";
+    options.SubstituteApiVersionInUrl = true;
+});
+
+builder.Services.AddSwaggerGen();
+builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
+
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
+
+    foreach (var desc in provider.ApiVersionDescriptions)
+    {
+        options.SwaggerEndpoint(
+            $"/swagger/{desc.GroupName}/swagger.json",
+            desc.GroupName.ToUpperInvariant()
+        );
+    }
+
+    options.RoutePrefix = "swagger";
+});
+
 
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
+
+
+public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
+{
+    private readonly IApiVersionDescriptionProvider provider;
+
+    public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider)
+    {
+        this.provider = provider;
+    }
+
+    public void Configure(SwaggerGenOptions options)
+    {
+        foreach (var desc in provider.ApiVersionDescriptions)
+        {
+            options.SwaggerDoc(desc.GroupName, new OpenApiInfo
+            {
+                Title = "Project API",
+                Version = desc.ApiVersion.ToString()
+            });
+        }
+    }
+}

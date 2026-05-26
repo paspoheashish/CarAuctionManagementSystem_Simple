@@ -1,11 +1,11 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "API Gateway",
-    "version": "v1"
+    "title": "Project API",
+    "version": "1.0"
   },
   "paths": {
-    "/api/Auctions/start": {
+    "/api/v1/Auctions/start": {
       "post": {
         "tags": [
           "Auction"
@@ -36,7 +36,7 @@
         }
       }
     },
-    "/api/Auctions/close/{id}": {
+    "/api/v1/Auctions/close/{id}": {
       "post": {
         "tags": [
           "Auction"
@@ -59,7 +59,7 @@
         }
       }
     },
-    "/api/Auctions/bid/{auctionId}": {
+    "/api/v1/Auctions/bid/{auctionId}": {
       "post": {
         "tags": [
           "Auction"
@@ -101,7 +101,7 @@
         }
       }
     },
-    "/api/Auctions/{id}": {
+    "/api/v1/Auctions/{id}": {
       "get": {
         "tags": [
           "Auction"
@@ -124,7 +124,7 @@
         }
       }
     },
-    "/api/Auth/login": {
+    "/api/v1/Auth/login": {
       "post": {
         "tags": [
           "Auth"
@@ -155,7 +155,7 @@
         }
       }
     },
-    "/api/items/Save": {
+    "/api/v1/items/Save": {
       "post": {
         "tags": [
           "Item"
@@ -186,7 +186,7 @@
         }
       }
     },
-    "/api/items/search": {
+    "/api/v1/items/search": {
       "get": {
         "tags": [
           "Item"
@@ -229,7 +229,7 @@
         }
       }
     },
-    "/api/items/{id}": {
+    "/api/v1/items/{id}": {
       "get": {
         "tags": [
           "Item"
@@ -252,7 +252,7 @@
         }
       }
     },
-    "/api/Users/{email}": {
+    "/api/v1/Users/{email}": {
       "get": {
         "tags": [
           "User"
@@ -274,7 +274,7 @@
         }
       }
     },
-    "/api/Users/register": {
+    "/api/v1/Users/register": {
       "post": {
         "tags": [
           "User"
@@ -305,7 +305,7 @@
         }
       }
     },
-    "/api/Users/validate": {
+    "/api/v1/Users/validate": {
       "post": {
         "tags": [
           "User"

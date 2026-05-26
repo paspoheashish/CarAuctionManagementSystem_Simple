@@ -1,4 +1,5 @@
-﻿using AuctionService.Infrastructure.Clients;
+﻿using Asp.Versioning;
+using AuctionService.Infrastructure.Clients;
 using ItemService.Application.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,8 @@ namespace ApiGateway.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/items")]
+    [Route("api/v{version:apiVersion}/items")]
+    [ApiVersion("1.0")]
     public class ItemController : ControllerBase
     {
         private readonly ItemClient _client;

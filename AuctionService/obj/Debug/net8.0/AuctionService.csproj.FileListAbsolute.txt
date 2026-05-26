@@ -71,6 +71,7 @@ C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.csproj.CoreCompileInputs.cache
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.MvcApplicationPartsAssemblyInfo.cs
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.MvcApplicationPartsAssemblyInfo.cache
+C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.sourcelink.json
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -87,4 +88,3 @@ C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.pdb
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.genruntimeconfig.cache
 C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\ref\AuctionService.dll
-C:\Family\Ashish\Constellation\CarAuctionManagementSystem_Simple\AuctionService\obj\Debug\net8.0\AuctionService.sourcelink.json
