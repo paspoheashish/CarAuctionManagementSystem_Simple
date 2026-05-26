@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "ItemService.Controllers.ItemsController",
-    "Method": "Add",
-    "RelativePath": "api/items",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "ItemService.Application.DTOs.AddVehicleDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ItemService.Controllers.ItemsController",
     "Method": "Get",
     "RelativePath": "api/items/{id}",
     "HttpMethod": "GET",
@@ -26,6 +10,22 @@
       {
         "Name": "id",
         "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ItemService.Controllers.ItemsController",
+    "Method": "Add",
+    "RelativePath": "api/items/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ItemService.Application.DTOs.AddVehicleDto",
         "IsRequired": true
       }
     ],

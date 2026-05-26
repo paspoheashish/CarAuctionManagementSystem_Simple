@@ -1,4 +1,5 @@
 ﻿using AuctionService.Application.DTOs;
+using AuctionService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuctionService.Controllers
@@ -27,7 +28,7 @@ namespace AuctionService.Controllers
             }
         }
 
-        [HttpPost("{id}/close")]
+        [HttpPost("close/{id}")]
         public async Task<IActionResult> Close(long id)
         {
             try
@@ -40,12 +41,12 @@ namespace AuctionService.Controllers
             }
         }
 
-        [HttpPost("{id}/bid")]
-        public async Task<IActionResult> Bid(long id, PlaceBidDto dto)
+        [HttpPost("bid/{auctionId}")]
+        public async Task<IActionResult> Bid(long auctionId, PlaceBidDto dto)
         {
             try
             {
-                return Ok(await _service.PlaceBidAsync(id, dto.Amount, dto.Bidder));
+                return Ok(await _service.PlaceBidAsync(auctionId, dto.Amount, dto.Bidder));
             }
             catch (Exception ex)
             {

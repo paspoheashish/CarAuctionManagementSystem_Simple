@@ -27,7 +27,7 @@ namespace AuctionService.Infrastructure.Clients
 
         public async Task<HttpResponseMessage> Add(AddVehicleDto dto)
         {
-            var response = await _http.PostAsJsonAsync($"http://localhost:5250/api/auctions/Add", dto);
+            var response = await _http.PostAsJsonAsync($"http://localhost:5250/api/auctions/Save", dto);
             return response;
         }
 

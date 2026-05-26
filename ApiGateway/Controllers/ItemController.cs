@@ -15,7 +15,7 @@ namespace ApiGateway.Controllers
             _client = client;
         }
 
-        [HttpPost]
+        [HttpPost("Save")]
         public async Task<IActionResult> Add(AddVehicleDto dto)
         {
             var response = await _client.Add(dto);

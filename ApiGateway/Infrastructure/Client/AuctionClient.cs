@@ -18,15 +18,15 @@ namespace AuctionService.Infrastructure.Clients
             return response;
         }
 
-        public async Task<HttpResponseMessage> Bid(long id, PlaceBidDto dto)
+        public async Task<HttpResponseMessage> Bid(long auctionId, PlaceBidDto dto)
         {
-            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/{id}/bid", dto);
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/bid/{auctionId}", dto);
             return response;
         }
 
         public async Task<HttpResponseMessage> Close(long id)
         {
-            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/{id}/close", new { });
+            var response = await _http.PostAsJsonAsync($"http://localhost:5117/api/auctions/close/{id}", new { });
             return response;
         }
 

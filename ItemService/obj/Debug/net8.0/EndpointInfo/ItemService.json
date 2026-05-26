@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/items": {
+    "/api/items/Save": {
       "post": {
         "tags": [
           "Items"

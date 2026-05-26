@@ -15,7 +15,7 @@ namespace ItemService.Controllers
             _service = service;
         }
 
-        [HttpPost]
+        [HttpPost("Save")]
         public async Task<IActionResult> Add(AddVehicleDto dto)
         {
             try

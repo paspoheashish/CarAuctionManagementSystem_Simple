@@ -25,7 +25,7 @@ namespace ApiGateway.Controllers
             return StatusCode((int)response.StatusCode, content);
         }
 
-        [HttpPost("{id}/close")]
+        [HttpPost("close/{id}")]
         public async Task<IActionResult> Close(long id)
         {
             var response = await _client.Close(id);
@@ -35,10 +35,10 @@ namespace ApiGateway.Controllers
             return StatusCode((int)response.StatusCode, content);
         }
 
-        [HttpPost("{id}/bid")]
-        public async Task<IActionResult> Bid(long id, PlaceBidDto dto)
+        [HttpPost("bid/{auctionId}")]
+        public async Task<IActionResult> Bid(long auctionId, PlaceBidDto dto)
         {
-            var response = await _client.Bid(id, dto);
+            var response = await _client.Bid(auctionId, dto);
 
             var content = await response.Content.ReadAsStringAsync();
 

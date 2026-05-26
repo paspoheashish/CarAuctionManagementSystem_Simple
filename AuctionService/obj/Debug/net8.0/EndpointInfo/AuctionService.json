@@ -36,7 +36,7 @@
         }
       }
     },
-    "/api/auctions/{id}/close": {
+    "/api/auctions/close/{id}": {
       "post": {
         "tags": [
           "Auctions"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "/api/auctions/{id}/bid": {
+    "/api/auctions/bid/{auctionId}": {
       "post": {
         "tags": [
           "Auctions"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "auctionId",
             "in": "path",
             "required": true,
             "schema": {

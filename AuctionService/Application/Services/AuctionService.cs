@@ -54,7 +54,7 @@ namespace AuctionService.Application.Services
             return auction;
         }
 
-        public async Task<Auction> PlaceBidAsync(long auctionId, decimal amount, long bidder)
+        public async Task<Auction?> PlaceBidAsync(long auctionId, decimal amount, long bidder)
         {
             var auction = await _auctionRepository.Get(auctionId);
 
@@ -81,7 +81,7 @@ namespace AuctionService.Application.Services
             auction.Bids.Add(bid);
 
             await _unitOfWork.SaveAsync();
-            return auction;
+            return await GetAuctionAsync(auctionId);
         }
 
         public async Task<Auction?> GetAuctionAsync(long id) {
