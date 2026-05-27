@@ -5,9 +5,23 @@ namespace AuctionService.Infrastructure.Repositories
 {
     public class AppDbContext : DbContext
     {
+        public AppDbContext()
+        {
+        }
+
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
         // Configuring the connection string
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (optionsBuilder.IsConfigured)
+                return;
+
+            // If an in-memory provider is already configured, don't register SQL Server
+            if (optionsBuilder.Options.Extensions.Any(e => e.GetType().Name.Contains("InMemory")))
+                return;
             // Replace with your actual SQL Server connection string
             string connectionString = "Data Source=YAKSH;Initial Catalog=AuctionDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30";
 

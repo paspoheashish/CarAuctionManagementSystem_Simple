@@ -1,11 +1,10 @@
 ﻿using ItemService.Infrastructure.DBContext;
-using UserService.Application.Interfaces.Repositories;
+using ItemService.Application.Interfaces;
 
-namespace UserService.Infrastructure.Repositories
+namespace ItemService.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-
         private readonly AppDBContext _context;
 
         public UnitOfWork(AppDBContext context)

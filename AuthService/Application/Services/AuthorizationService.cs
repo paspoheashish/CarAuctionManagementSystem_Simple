@@ -6,8 +6,8 @@ namespace AuthService.Application.Services
 {
     public class AuthorizationService : IAuthorizationService
     {
-        private readonly UserServiceClient _userClient;
-        public AuthorizationService(UserServiceClient userClient) {
+        private readonly IUserServiceClient _userClient;
+        public AuthorizationService(IUserServiceClient userClient) {
             _userClient = userClient;
         }
 

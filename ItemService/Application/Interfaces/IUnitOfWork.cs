@@ -1,4 +1,4 @@
-﻿namespace UserService.Application.Interfaces.Repositories
+﻿namespace ItemService.Application.Interfaces
 {
     public interface IUnitOfWork
     {

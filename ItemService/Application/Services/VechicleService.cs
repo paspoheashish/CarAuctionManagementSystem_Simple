@@ -3,7 +3,7 @@ using ItemService.Application.Interfaces;
 using ItemService.Domain.Entities;
 using ItemService.Infrastructure.DBContext;
 using Microsoft.EntityFrameworkCore;
-using UserService.Application.Interfaces.Repositories;
+// removed incorrect using
 
 namespace ItemService.Application.Services
 {

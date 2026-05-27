@@ -1,8 +1,6 @@
 using AuctionService.Application.Interfaces;
 using AuctionService.Infrastructure.Clients;
 using AuctionService.Infrastructure.Repositories;
-using UserService.Application.Interfaces.Repositories;
-using UserService.Infrastructure.Repositories;
 
 internal class Program
 {

@@ -1,7 +1,6 @@
 ﻿using AuctionService.Application.Interfaces;
 using AuctionService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using UserService.Application.Interfaces.Repositories;
 
 namespace AuctionService.Application.Services
 {

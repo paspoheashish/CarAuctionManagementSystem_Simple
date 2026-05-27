@@ -1,8 +1,7 @@
 using ItemService.Application.Interfaces;
 using ItemService.Infrastructure.DBContext;
 using ItemService.Infrastructure.Repositories;
-using UserService.Application.Interfaces.Repositories;
-using UserService.Infrastructure.Repositories;
+// corrected to use ItemService interfaces
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<AppDBContext>();
 builder.Services.AddSingleton<IVehicleRepository, VehicleRepository>();
-builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
+builder.Services.AddSingleton<ItemService.Application.Interfaces.IUnitOfWork, ItemService.Infrastructure.Repositories.UnitOfWork>();
 builder.Services.AddScoped<IVechicleService , ItemService.Application.Services.VechicleService>();
 
 var app = builder.Build();

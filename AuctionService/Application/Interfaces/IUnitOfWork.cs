@@ -1,4 +1,4 @@
-﻿namespace UserService.Application.Interfaces.Repositories
+﻿namespace AuctionService.Application.Interfaces
 {
     public interface IUnitOfWork
     {

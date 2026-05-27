@@ -1,11 +1,10 @@
 ﻿using AuctionService.Infrastructure.Repositories;
-using UserService.Application.Interfaces.Repositories;
+using AuctionService.Application.Interfaces;
 
-namespace UserService.Infrastructure.Repositories
+namespace AuctionService.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-
         private readonly AppDbContext _context;
 
         public UnitOfWork(AppDbContext context)
