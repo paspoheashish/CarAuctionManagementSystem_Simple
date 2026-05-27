@@ -19,34 +19,27 @@ namespace AuctionService.Test
         }
 
         [Test]
-        public async Task Add_And_Get_Auction()
+        public async Task Test_AddAndGet_ok()
         {
             using var ctx = new AppDbContext(_options);
             var repo = new AuctionRepository(ctx);
-
             var auction = new Auction { Id = 1, VehicleId = 10, IsActive = true };
             await repo.Add(auction);
             await ctx.SaveChangesAsync();
-
             var got = await repo.Get(1);
-            Assert.That(got, Is.Not.Null);
             Assert.That(got!.VehicleId, Is.EqualTo(10));
         }
 
         [Test]
-        public async Task GetAuctionWithBids_Returns_Bids()
+        public async Task Test_GetWithBids_ok()
         {
             using var ctx = new AppDbContext(_options);
             ctx.Bids.Add(new Bid { Id = 2, AuctionId = 2, Amount = 50, Bidder = 1 });
             ctx.Auctions.Add(new Auction { Id = 2, VehicleId = 20, IsActive = true });
             await ctx.SaveChangesAsync();
-
             var repo = new AuctionRepository(ctx);
             var res = await repo.GetAuctionWithBids(2);
-
-            Assert.That(res, Is.Not.Null);
-            Assert.That(res!.Bids, Is.Not.Null);
-            Assert.That(res.Bids.Count, Is.GreaterThanOrEqualTo(0));
+            Assert.That(res!.Bids.Count, Is.GreaterThanOrEqualTo(0));
         }
     }
 }

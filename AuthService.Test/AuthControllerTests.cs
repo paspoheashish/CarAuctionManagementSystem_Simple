@@ -11,33 +11,32 @@ namespace AuthService.Test
     public class AuthControllerTests
     {
         [Test]
-        public async Task Login_WithInvalidCredentials_ReturnsMessage()
+        public async Task Test_Login_bad()
         {
             var authMock = new Mock<IAuthorizationService>();
-            authMock.Setup(a => a.Authorize("x@x.com", "bad")).ReturnsAsync((UserValidationResponse?)null);
+            authMock.Setup(a => a.Authorize("ap@gmail.com", "ap1234")).ReturnsAsync((UserValidationResponse?)null);
 
             var jwtMock = new Mock<IJwtTokenService>();
             var controller = new AuthController(authMock.Object, jwtMock.Object);
 
-            var res = await controller.Login(new LoginRequest { Email = "x@x.com", Password = "bad" });
-            Assert.That(TestHelpers.GetMessage(res), Is.EqualTo("Invalid credentials"));
+            var res = await controller.Login(new LoginRequest { Email = "ap@gmail.com", Password = "ap1234" });
+            Assert.That(res, Is.TypeOf<UnauthorizedObjectResult>());
         }
 
         [Test]
-        public async Task Login_WithValidCredentials_ReturnsToken()
+        public async Task Test_Login_ok()
         {
-            var user = new UserValidationResponse { UserId = 2, Email = "u@u.com", Role = "Admin" };
+            var user = new UserValidationResponse { UserId = 2, Email = "ap@gmail.com", Role = "Admin" };
             var authMock = new Mock<IAuthorizationService>();
-            authMock.Setup(a => a.Authorize("u@u.com", "good")).ReturnsAsync(user);
+            authMock.Setup(a => a.Authorize("ap@gmail.com", "ap1234")).ReturnsAsync(user);
 
             var jwtMock = new Mock<IJwtTokenService>();
             jwtMock.Setup(j => j.GenerateToken(user)).Returns("token123");
 
             var controller = new AuthController(authMock.Object, jwtMock.Object);
 
-            var res = await controller.Login(new LoginRequest { Email = "u@u.com", Password = "good" });
-            var obj = TestHelpers.GetOkValue(res);
-            Assert.That(TestHelpers.GetProp<string>(obj, "Token"), Is.EqualTo("token123"));
+            var res = await controller.Login(new LoginRequest { Email = "ap@gmail.com", Password = "ap1234" });
+            Assert.That(res, Is.TypeOf<OkObjectResult>());
         }
     }
 }

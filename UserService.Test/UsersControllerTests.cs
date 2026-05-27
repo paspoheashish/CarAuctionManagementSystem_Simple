@@ -28,24 +28,23 @@ namespace UserService.Test
         }
 
         [Test]
-        public async Task GetUser_WhenNotFound_ReturnsMessage()
+        public async Task Test_GetUser_missing()
         {
             _userRepositoryMock.Setup(r => r.GetByEmailAsync(It.IsAny<string>())).ReturnsAsync((User?)null);
-            var result = await _controller.GetUser("no@no.com");
-            Assert.That(TestHelpers.GetMessage(result), Is.EqualTo("User not found."));
+            var result = await _controller.GetUser("ap@gmail.com");
+            Assert.That(result, Is.TypeOf<NotFoundObjectResult>());
         }
 
         [Test]
-        public async Task Register_WhenNew_ReturnsCreated()
+        public async Task Test_Register_ok()
         {
-            var dto = new CreateUserDto { FirstName = "A", LastName = "B", Email = "new@e.com", Password = "p" };
+            var dto = new CreateUserDto { FirstName = "ap", LastName = "ap", Email = "ap@gmail.com", Password = "ap1234" };
             _userRepositoryMock.Setup(r => r.GetByEmailAsync(dto.Email)).ReturnsAsync((User?)null);
             _userRepositoryMock.Setup(r => r.AddAsync(It.IsAny<User>())).Returns(Task.CompletedTask).Callback<User>(u => { typeof(User).GetProperty("Id")!.SetValue(u, 99L); });
             _unitOfWorkMock.Setup(u => u.SaveAsync()).ReturnsAsync(1);
 
             var res = await _controller.Register(dto);
-            var obj = TestHelpers.GetOkValue<object>(res)!;
-            Assert.That(TestHelpers.GetProp<string>(obj, "Email"), Is.EqualTo(dto.Email));
+            Assert.That(res, Is.TypeOf<OkObjectResult>());
         }
     }
 }

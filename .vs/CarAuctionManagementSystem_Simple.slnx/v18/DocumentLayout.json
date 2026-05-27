@@ -3,82 +3,30 @@
   "WorkspaceRootPath": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice.test\\auctionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|solutionrelative:auctionservice.test\\auctionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6461A72-12DC-4D31-B114-B8BE162CEDC2}|ItemService.Test\\ItemService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice.test\\vechicleservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6461A72-12DC-4D31-B114-B8BE162CEDC2}|ItemService.Test\\ItemService.Test.csproj|solutionrelative:itemservice.test\\vechicleservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21EDBE2E-4233-4AEA-88F2-2B1C478FDE97}|UserService.Test\\UserService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\userservice.test\\userservice.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{21EDBE2E-4233-4AEA-88F2-2B1C478FDE97}|UserService.Test\\UserService.Test.csproj|solutionrelative:userservice.test\\userservice.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{AFCE16CC-76B7-4879-AD30-ADF0F441E16F}|AuthService.Test\\AuthService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\authservice.test\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFCE16CC-76B7-4879-AD30-ADF0F441E16F}|AuthService.Test\\AuthService.Test.csproj|solutionrelative:authservice.test\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21EDBE2E-4233-4AEA-88F2-2B1C478FDE97}|UserService.Test\\UserService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\userservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21EDBE2E-4233-4AEA-88F2-2B1C478FDE97}|UserService.Test\\UserService.Test.csproj|solutionrelative:userservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\BidRepositoryTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6461A72-12DC-4D31-B114-B8BE162CEDC2}|ItemService.Test\\ItemService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6461A72-12DC-4D31-B114-B8BE162CEDC2}|ItemService.Test\\ItemService.Test.csproj|solutionrelative:itemservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\ItemServiceClientTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|solutionrelative:auctionservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1425906040\\TestHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\RepositoriesTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\TestHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFCE16CC-76B7-4879-AD30-ADF0F441E16F}|AuthService.Test\\AuthService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\authservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFCE16CC-76B7-4879-AD30-ADF0F441E16F}|AuthService.Test\\AuthService.Test.csproj|solutionrelative:authservice.test\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\TestHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\AuthServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice\\infrastructure\\repositories\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|solutionrelative:auctionservice\\infrastructure\\repositories\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFCE16CC-76B7-4879-AD30-ADF0F441E16F}|AuthService.Test\\AuthService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\authservice.test\\authservice.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AFCE16CC-76B7-4879-AD30-ADF0F441E16F}|AuthService.Test\\AuthService.Test.csproj|solutionrelative:authservice.test\\authservice.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice.test\\auctionservice.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|solutionrelative:auctionservice.test\\auctionservice.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|solutionrelative:auctionservice\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|solutionrelative:auctionservice\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|solutionrelative:auctionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice\\application\\services\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00904F91-142E-B9AC-0823-9DAC4671E5CE}|AuctionService\\AuctionService.csproj|solutionrelative:auctionservice\\application\\services\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|solutionrelative:itemservice\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice\\application\\services\\vechicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|solutionrelative:itemservice\\application\\services\\vechicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|solutionrelative:itemservice\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0C35AF-A1A3-9D48-1971-4F604274956A}|ItemService\\ItemService.csproj|solutionrelative:itemservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1909459156\\TestHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -88,266 +36,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Program.cs",
-              "RelativeDocumentMoniker": "ItemService\\Program.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Program.cs",
-              "RelativeToolTip": "ItemService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "ItemService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "ItemService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VechicleService.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Application\\Services\\VechicleService.cs",
-              "RelativeDocumentMoniker": "ItemService\\Application\\Services\\VechicleService.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Application\\Services\\VechicleService.cs",
-              "RelativeToolTip": "ItemService\\Application\\Services\\VechicleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "ItemService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "ItemService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuctionService.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Application\\Services\\AuctionService.cs",
-              "RelativeDocumentMoniker": "AuctionService\\Application\\Services\\AuctionService.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Application\\Services\\AuctionService.cs",
-              "RelativeToolTip": "AuctionService\\Application\\Services\\AuctionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Program.cs",
-              "RelativeDocumentMoniker": "AuctionService\\Program.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Program.cs",
-              "RelativeToolTip": "AuctionService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "AuctionService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "AuctionService\\Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "AuctionService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "AuctionService\\Application\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:24.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuctionService.Test",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\AuctionService.Test.csproj",
-              "RelativeDocumentMoniker": "AuctionService.Test\\AuctionService.Test.csproj",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\AuctionService.Test.csproj",
-              "RelativeToolTip": "AuctionService.Test\\AuctionService.Test.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-27T06:45:24.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthService.Test",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService.Test\\AuthService.Test.csproj",
-              "RelativeDocumentMoniker": "AuthService.Test\\AuthService.Test.csproj",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService.Test\\AuthService.Test.csproj",
-              "RelativeToolTip": "AuthService.Test\\AuthService.Test.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-27T06:45:24.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Infrastructure\\Repositories\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "AuctionService\\Infrastructure\\Repositories\\AppDBContext.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService\\Infrastructure\\Repositories\\AppDBContext.cs",
-              "RelativeToolTip": "AuctionService\\Infrastructure\\Repositories\\AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\AuthServiceTests.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\AuthServiceTests.cs",
-              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\AuthServiceTests.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\AuthServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.771Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TestHelpers.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService.Test\\TestHelpers.cs",
-              "RelativeDocumentMoniker": "AuthService.Test\\TestHelpers.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService.Test\\TestHelpers.cs",
-              "RelativeToolTip": "AuthService.Test\\TestHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1909459156\\TestHelpers.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1909459156\\TestHelpers.cs",
+              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1909459156\\TestHelpers.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1909459156\\TestHelpers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.653Z",
+              "WhenOpened": "2026-05-27T10:44:39.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "RepositoriesTests.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\RepositoriesTests.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\RepositoriesTests.cs",
-              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\RepositoriesTests.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\RepositoriesTests.cs",
+              "Title": "TestHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\TestHelpers.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\TestHelpers.cs",
+              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\TestHelpers.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1127808327\\TestHelpers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.539Z",
+              "WhenOpened": "2026-05-27T10:44:39.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "TestHelpers.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\TestHelpers.cs",
-              "RelativeDocumentMoniker": "AuctionService.Test\\TestHelpers.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\TestHelpers.cs",
-              "RelativeToolTip": "AuctionService.Test\\TestHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\TestHelpers.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\TestHelpers.cs",
+              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\TestHelpers.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\TestHelpers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.458Z",
+              "WhenOpened": "2026-05-27T10:44:39.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "TestHelpers.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService.Test\\TestHelpers.cs",
-              "RelativeDocumentMoniker": "ItemService.Test\\TestHelpers.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService.Test\\TestHelpers.cs",
-              "RelativeToolTip": "ItemService.Test\\TestHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1425906040\\TestHelpers.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1425906040\\TestHelpers.cs",
+              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1425906040\\TestHelpers.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1425906040\\TestHelpers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.377Z",
+              "WhenOpened": "2026-05-27T10:44:39.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TestHelpers.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\UserService.Test\\TestHelpers.cs",
-              "RelativeDocumentMoniker": "UserService.Test\\TestHelpers.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\UserService.Test\\TestHelpers.cs",
-              "RelativeToolTip": "UserService.Test\\TestHelpers.cs",
+              "Title": "ItemServiceClientTests.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\ItemServiceClientTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\ItemServiceClientTests.cs",
+              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\ItemServiceClientTests.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\ItemServiceClientTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:45:23.258Z",
+              "WhenOpened": "2026-05-27T10:44:39.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserService.Test",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\UserService.Test\\UserService.Test.csproj",
-              "RelativeDocumentMoniker": "UserService.Test\\UserService.Test.csproj",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\UserService.Test\\UserService.Test.csproj",
-              "RelativeToolTip": "UserService.Test\\UserService.Test.csproj",
+              "Title": "BidRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\BidRepositoryTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\BidRepositoryTests.cs",
+              "ToolTip": "C:\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\BidRepositoryTests.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\ashis\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-2134933094\\BidRepositoryTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-27T06:45:23.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuctionServiceTests.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\AuctionServiceTests.cs",
-              "RelativeDocumentMoniker": "AuctionService.Test\\AuctionServiceTests.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\AuctionServiceTests.cs",
-              "RelativeToolTip": "AuctionService.Test\\AuctionServiceTests.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAawEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:42:14.798Z",
+              "WhenOpened": "2026-05-27T10:44:38.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AuthControllerTests.cs",
+              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService.Test\\AuthControllerTests.cs",
+              "RelativeDocumentMoniker": "AuthService.Test\\AuthControllerTests.cs",
+              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuthService.Test\\AuthControllerTests.cs",
+              "RelativeToolTip": "AuthService.Test\\AuthControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T10:44:38.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "VechicleServiceTests.cs",
               "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService.Test\\VechicleServiceTests.cs",
               "RelativeDocumentMoniker": "ItemService.Test\\VechicleServiceTests.cs",
               "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService.Test\\VechicleServiceTests.cs",
               "RelativeToolTip": "ItemService.Test\\VechicleServiceTests.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:41:45.587Z",
+              "WhenOpened": "2026-05-27T10:44:38.809Z",
               "EditorCaption": ""
             }
           ]

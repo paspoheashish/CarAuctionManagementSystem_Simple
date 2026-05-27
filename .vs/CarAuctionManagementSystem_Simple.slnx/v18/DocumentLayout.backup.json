@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\auctionservice.test\\auctionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84DCC263-B0F8-48A9-91E4-8C29D6995DAE}|AuctionService.Test\\AuctionService.Test.csproj|solutionrelative:auctionservice.test\\auctionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6461A72-12DC-4D31-B114-B8BE162CEDC2}|ItemService.Test\\ItemService.Test.csproj|c:\\family\\ashish\\constellation\\carauctionmanagementsystem_simple\\itemservice.test\\vechicleservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6461A72-12DC-4D31-B114-B8BE162CEDC2}|ItemService.Test\\ItemService.Test.csproj|solutionrelative:itemservice.test\\vechicleservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuctionServiceTests.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\AuctionServiceTests.cs",
-              "RelativeDocumentMoniker": "AuctionService.Test\\AuctionServiceTests.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\AuctionService.Test\\AuctionServiceTests.cs",
-              "RelativeToolTip": "AuctionService.Test\\AuctionServiceTests.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAawEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:42:14.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VechicleServiceTests.cs",
-              "DocumentMoniker": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService.Test\\VechicleServiceTests.cs",
-              "RelativeDocumentMoniker": "ItemService.Test\\VechicleServiceTests.cs",
-              "ToolTip": "C:\\Family\\Ashish\\Constellation\\CarAuctionManagementSystem_Simple\\ItemService.Test\\VechicleServiceTests.cs",
-              "RelativeToolTip": "ItemService.Test\\VechicleServiceTests.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:41:45.587Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

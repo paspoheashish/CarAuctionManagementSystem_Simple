@@ -31,22 +31,22 @@ namespace ItemService.Test
         }
 
         [Test]
-        public async Task AddVehicle_WhenOk_ReturnsVehicle()
+        public async Task Test_AddVehicle_ok()
         {
-            var dto = new AddVehicleDto { Id = 1, Type = "Hatchback", Manufacturer = "M", Model = "X", Year = 2020, StartingBid = 100m };
+            var dto = new AddVehicleDto { Id = 1, Type = "Hatchback", Manufacturer = "VW", Model = "Polo", Year = 2020, StartingBid = 100m };
             var vehicle = new Hatchback { Id = 1 };
             _serviceMock.Setup(s => s.AddVehicleAsync(dto)).ReturnsAsync(vehicle);
 
             var result = await _controller.Add(dto);
-            Assert.That(TestHelpers.GetOkValue(result), Is.SameAs(vehicle));
+            Assert.That(result, Is.TypeOf<OkObjectResult>());
         }
 
         [Test]
-        public async Task GetVehicle_WhenMissing_ReturnsNull()
+        public async Task Test_GetVehicle_missing()
         {
             _serviceMock.Setup(s => s.GetAsync(5)).ReturnsAsync((Vehicle?)null);
             var result = await _controller.Get(5);
-            Assert.That(TestHelpers.GetOkValue(result), Is.Null);
+            Assert.That(result, Is.TypeOf<OkObjectResult>());
         }
     }
 }

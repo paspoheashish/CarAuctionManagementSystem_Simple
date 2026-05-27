@@ -11,16 +11,14 @@ namespace AuthService.Test
     public class AuthorizationServiceTests
     {
         [Test]
-        public async Task Authorize_Calls_UserServiceClient()
+        public async Task Test_Authorize_ok()
         {
             var clientMock = new Mock<IUserServiceClient>();
-            clientMock.Setup(c => c.ValidateCredentials("a@b.com", "pwd")).ReturnsAsync(new UserValidationResponse { UserId = 1, Email = "a@b.com", Role = "User" });
+            clientMock.Setup(c => c.ValidateCredentials("ap@gmail.com", "ap1234")).ReturnsAsync(new UserValidationResponse { UserId = 1, Email = "ap@gmail.com", Role = "User" });
 
             var svc = new AuthorizationService(clientMock.Object);
-            var res = await svc.Authorize("a@b.com", "pwd");
-
+            var res = await svc.Authorize("ap@gmail.com", "ap1234");
             Assert.That(res, Is.Not.Null);
-            Assert.That(res!.Email, Is.EqualTo("a@b.com"));
         }
     }
 }

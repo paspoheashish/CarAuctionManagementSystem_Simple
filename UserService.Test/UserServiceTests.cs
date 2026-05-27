@@ -28,7 +28,7 @@ namespace UserService.Test
             uow.Setup(u => u.SaveAsync()).ReturnsAsync(1);
             repo.Setup(r => r.AddAsync(It.IsAny<User>())).Returns(Task.CompletedTask);
 
-            var dto = new CreateUserDto { FirstName = "A", LastName = "B", Email = "me@me.com", Password = "p" };
+            var dto = new CreateUserDto { FirstName = "ap", LastName = "ap", Email = "ap@gmail.com", Password = "ap1234" };
             var result = await service.CreateUserAsync(dto);
 
             Assert.That(result.Email, Is.EqualTo(dto.Email));

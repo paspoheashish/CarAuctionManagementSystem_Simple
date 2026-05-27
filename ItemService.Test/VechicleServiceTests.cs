@@ -25,19 +25,19 @@ namespace ItemService.Test
         }
 
         [Test]
-        public async Task AddVehicle_Succeeds_With_Defaults()
+        public async Task Test_Add_ok()
         {
             var dto = new AddVehicleDto { Id = 1, Type = "Hatchback", Manufacturer = "M", Model = "X", Year = 2020, StartingBid = 100m };
             _repoMock.Setup(r => r.GetAsync(dto.Id)).ReturnsAsync((Vehicle?)null);
 
             var result = await _service.AddVehicleAsync(dto);
 
-            Assert.That(result, Is.InstanceOf<Hatchback>());
-            Assert.That(((Hatchback)result).NumberOfDoors, Is.EqualTo(4));
+            var hb = (Hatchback)result;
+            Assert.That(hb.NumberOfDoors, Is.EqualTo(4));
         }
 
         [Test]
-        public void AddVehicle_Throws_WhenDuplicate()
+        public void Test_Add_duplicate()
         {
             var dto = new AddVehicleDto { Id = 5, Type = "Hatchback", Manufacturer = "M", Model = "D", Year = 2017, StartingBid = 10m };
             _repoMock.Setup(r => r.GetAsync(dto.Id)).ReturnsAsync(new Hatchback { Id = 5 });
@@ -46,7 +46,7 @@ namespace ItemService.Test
         }
 
         [Test]
-        public async Task Search_Returns_Results()
+        public async Task Test_Search_ok()
         {
             var expected = new List<Vehicle> { new Hatchback { Id = 7 } };
             _repoMock.Setup(r => r.SearchAsync("Hatchback", "M", "X", 2020)).ReturnsAsync(expected);
@@ -56,7 +56,7 @@ namespace ItemService.Test
         }
 
         [Test]
-        public async Task Get_Returns_Vehicle()
+        public async Task Test_Get_ok()
         {
             var expected = new Sedan { Id = 8 };
             _repoMock.Setup(r => r.GetAsync(8)).ReturnsAsync(expected);

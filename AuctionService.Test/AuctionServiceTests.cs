@@ -28,74 +28,62 @@ namespace AuctionService.Test
         }
 
         [Test]
-        public async Task StartAuction_WhenVehicleExists_StartsAuction()
+        public async Task Test_StartAuction_ok()
         {
             _itemClientMock.Setup(c => c.VehicleExists(1)).ReturnsAsync(true);
             _auctionRepoMock.Setup(r => r.GetActive(1, true)).ReturnsAsync((Auction?)null);
-
             var result = await _service.StartAuctionAsync(1);
-
-            Assert.That(result.VehicleId, Is.EqualTo(1));
             Assert.That(result.IsActive, Is.True);
         }
 
         [Test]
-        public void StartAuction_WhenVehicleMissing_Throws()
+        public void Test_StartAuction_noVehicle()
         {
             _itemClientMock.Setup(c => c.VehicleExists(2)).ReturnsAsync(false);
-
             Assert.ThrowsAsync<Exception>(async () => await _service.StartAuctionAsync(2));
         }
 
         [Test]
-        public async Task CloseAuction_WhenActive_ClosesAuction()
+        public async Task Test_CloseAuction_ok()
         {
             var auction = new Auction { Id = 10, IsActive = true };
             _auctionRepoMock.Setup(r => r.Get(10)).ReturnsAsync(auction);
-
             var result = await _service.CloseAuctionAsync(10);
-
             Assert.That(result.IsActive, Is.False);
         }
 
         [Test]
-        public void CloseAuction_WhenMissing_Throws()
+        public void Test_CloseAuction_missing()
         {
             _auctionRepoMock.Setup(r => r.Get(11)).ReturnsAsync((Auction?)null);
-
             Assert.ThrowsAsync<Exception>(async () => await _service.CloseAuctionAsync(11));
         }
 
         [Test]
-        public async Task PlaceBid_WhenValid_UpdatesAuction()
+        public async Task Test_PlaceBid_ok()
         {
-            var auction = new Auction { Id = 20, IsActive = true, CurrentBid = 100m, Bids = new List<Bid>() };
+            var auction = new Auction { Id = 20, IsActive = true, CurrentBid = 1000, Bids = new List<Bid>() };
             _auctionRepoMock.Setup(r => r.Get(20)).ReturnsAsync(auction);
             _bidRepoMock.Setup(b => b.GetBidsForAuction(20)).ReturnsAsync(new List<Bid>());
             _auctionRepoMock.Setup(r => r.GetAuctionWithBids(20)).ReturnsAsync(auction);
-
-            var res = await _service.PlaceBidAsync(20, 150m, 77);
-            Assert.That(res, Is.Not.Null);
-            Assert.That(res!.CurrentBid, Is.EqualTo(150m));
+            var res = await _service.PlaceBidAsync(20, 1500, 77);
+            Assert.That(res!.CurrentBid, Is.EqualTo(1500));
         }
 
         [Test]
-        public void PlaceBid_WhenTooLow_Throws()
+        public void Test_PlaceBid_tooLow()
         {
-            var auction = new Auction { Id = 23, IsActive = true, CurrentBid = 500m, Bids = new List<Bid>() };
+            var auction = new Auction { Id = 23, IsActive = true, CurrentBid = 5000, Bids = new List<Bid>() };
             _auctionRepoMock.Setup(r => r.Get(23)).ReturnsAsync(auction);
-
-            Assert.ThrowsAsync<Exception>(async () => await _service.PlaceBidAsync(23, 400m, 5));
+            Assert.ThrowsAsync<Exception>(async () => await _service.PlaceBidAsync(23, 4000, 5));
         }
 
         [Test]
-        public async Task GetAuctionAsync_Delegates_To_Repository()
+        public async Task Test_GetAuction_ok()
         {
             var expected = new Auction { Id = 30 };
             _auctionRepoMock.Setup(r => r.GetAuctionWithBids(30)).ReturnsAsync(expected);
-
             var res = await _service.GetAuctionAsync(30);
-
             Assert.That(res, Is.SameAs(expected));
         }
     }

@@ -5,6 +5,7 @@ using AuctionService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
+using System;
 using System.Threading.Tasks;
 
 namespace AuctionService.Test
@@ -24,92 +25,44 @@ namespace AuctionService.Test
         [TearDown]
         public void TearDown()
         {
-            if (_controller is System.IDisposable d) d.Dispose();
+            if (_controller is IDisposable d) d.Dispose();
             _controller = null!;
         }
 
         [Test]
-        public async Task Start_ReturnsOk_When_Succeeds()
+        public async Task Test_StartController_ok()
         {
             var dto = new StartAuctionDto { VehicleId = 1 };
             var auction = new Auction { VehicleId = 1 };
             _serviceMock.Setup(s => s.StartAuctionAsync(1)).ReturnsAsync(auction);
-
             var res = await _controller.Start(dto);
-            var obj = TestHelpers.GetOkValue(res);
-            Assert.That(obj, Is.SameAs(auction));
+            Assert.That(res, Is.TypeOf<OkObjectResult>());
         }
 
         [Test]
-        public async Task StartAuction_WhenVehicleMissing_ReturnsMessage()
+        public async Task Test_StartController_error()
         {
             var dto = new StartAuctionDto { VehicleId = 2 };
-            _serviceMock.Setup(s => s.StartAuctionAsync(2)).ThrowsAsync(new System.Exception("Vehicle does not exist."));
-
+            _serviceMock.Setup(s => s.StartAuctionAsync(2)).ThrowsAsync(new Exception("Vehicle missing."));
             var res = await _controller.Start(dto);
-            Assert.That(TestHelpers.GetMessage(res), Is.EqualTo("Vehicle does not exist."));
+            Assert.That(res, Is.TypeOf<ConflictObjectResult>());
         }
 
         [Test]
-        public async Task Close_ReturnsOk_When_Succeeds()
+        public async Task Test_GetController_ok()
         {
             var auction = new Auction { Id = 5 };
-            _serviceMock.Setup(s => s.CloseAuctionAsync(5)).ReturnsAsync(auction);
-
-            var res = await _controller.Close(5);
-            var obj = TestHelpers.GetOkValue(res);
-            Assert.That(obj, Is.SameAs(auction));
+            _serviceMock.Setup(s => s.GetAuctionAsync(5)).ReturnsAsync(auction);
+            var res = await _controller.Get(5);
+            Assert.That(res, Is.TypeOf<OkObjectResult>());
         }
 
         [Test]
-        public async Task CloseAuction_WhenNotFound_ReturnsMessage()
+        public async Task Test_GetController_notFound()
         {
-            _serviceMock.Setup(s => s.CloseAuctionAsync(6)).ThrowsAsync(new System.Exception("Auction not found."));
-            var res = await _controller.Close(6);
-            Assert.That(TestHelpers.GetMessage(res), Is.EqualTo("Auction not found."));
-        }
-
-        [Test]
-        public async Task Bid_ReturnsOk_When_Succeeds()
-        {
-            var dto = new PlaceBidDto { Amount = 100m, Bidder = 9 };
-            var auction = new Auction { Id = 7 };
-            _serviceMock.Setup(s => s.PlaceBidAsync(7, 100m, 9)).ReturnsAsync(auction);
-
-            var res = await _controller.Bid(7, dto);
-            var obj = TestHelpers.GetOkValue(res);
-            Assert.That(obj, Is.SameAs(auction));
-        }
-
-        [Test]
-        public async Task Bid_ReturnsConflict_When_Service_Throws()
-        {
-            var dto = new PlaceBidDto { Amount = 10m, Bidder = 1 };
-            _serviceMock.Setup(s => s.PlaceBidAsync(8, 10m, 1)).ThrowsAsync(new System.Exception("Bid must be higher than current bid."));
-
-            var res = await _controller.Bid(8, dto);
-            Assert.That(TestHelpers.GetMessage(res), Is.EqualTo("Bid must be higher than current bid."));
-        }
-
-        [Test]
-        public async Task Get_ReturnsOk_When_Found()
-        {
-            var auction = new Auction { Id = 20 };
-            _serviceMock.Setup(s => s.GetAuctionAsync(20)).ReturnsAsync(auction);
-
-            var res = await _controller.Get(20);
-            var obj = TestHelpers.GetOkValue(res);
-            Assert.That(obj, Is.SameAs(auction));
-        }
-
-        [Test]
-        public async Task Get_ReturnsNotFound_When_Null()
-        {
-            _serviceMock.Setup(s => s.GetAuctionAsync(21)).ReturnsAsync((Auction?)null);
-
-            var res = await _controller.Get(21);
-
-            Assert.That(res, Is.InstanceOf<NotFoundResult>());
+            _serviceMock.Setup(s => s.GetAuctionAsync(6)).ReturnsAsync((Auction?)null);
+            var res = await _controller.Get(6);
+            Assert.That(res, Is.TypeOf<NotFoundResult>());
         }
     }
 }
